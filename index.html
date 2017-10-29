@@ -31,7 +31,7 @@
 
 
     <div class="container">
-      <div class="nav-wrapper brand-logo">Mess Refund</a> </div> 
+      <div class="nav-wrapper brand-logo">Mess Refund: 10,000 </a> </div> 
       <div class="nav-wrapper right"><a id="logo-container" href="login.html" class="brand-logo">Logout</a>
       </div> 
 
@@ -48,7 +48,8 @@
   <div class="row white">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s4"><a href="#test1">My Dashboard </a></li>
+        <li class="tab col s4"><a href="#test1"> My Dashboard 
+        </a></li>
         <li class="tab col s4"><a class="active" href="#test2"> My Calendar </a></li>
         <li class="tab col s4"><a href="#test3"> My Queries </a></li>
       </ul>
@@ -79,6 +80,15 @@
                 <br>  
                 Semester: 3
               </span>  
+              <span>
+                <br>
+                 Room Number: 123
+                 </span>
+               </span>
+              <span>
+                <br>
+                 Hostel: 1
+                </span>     
               </p>
             </div>
             
@@ -95,10 +105,31 @@
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
+
             <div class="modal-content">
+
             <h4>Menu</h4>
-            <p>Mess item 1</p>
+            <p>Mess item 1</p> 
+    <fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" />
+    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" />
+    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+    </fieldset>
+            
         </div>
+         
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Attending</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Not Attending</a>
