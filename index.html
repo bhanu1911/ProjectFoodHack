@@ -1,52 +1,78 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html>
+<head>
+<title> 1234 </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
 
-    <body>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+</head>
 
-      <!--Import jQuery before materialize.js-->
-     <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">smartMess</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Sass</a></li>
-        <li><a href="#">Components</a></li>
-        <li><a href="#">JavaScript</a></li>
-      </ul>
+<body>
+ <nav class="light-blue lighten-1" role="navigation">  
+
+
+    <div class="container">
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right">
+          <li><div id = "messrefund" href="#" data-activates="slide-out">Mess refund: 30,000</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
     </div>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons black"></i></a>
   </nav>
 
-    <ul id="slide-out" class="side-nav">
-    <li>
-    <div class="user-view">
-    <div class="background">
-    <img src="#">
+   <div class="row">
+        <div class="col s4 m4 offset-s4 offset-m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/user.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+  
+<!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
     </div>
-      <a href="#!user"><img class="circle" src="images/user.png"></a>
-      <a href="#!name"><span class="name">John Doe</span></a>
-      <a href="#!email"><span class="email">jdandturk@gmail.com</span></a>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
     </div>
-    </li>
-    <li><a class="waves-effect" href="#!">First Link With Waves</a></li>
-    <li><a href="#!">Second Link with waves </a></li>
+  </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+
+
+  
+     
     
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
     <ul class="collapsible" data-collapsible="accordion"> 
-
-         
     <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Breakfast</div>
+      <div class="collapsible-header"><i class="material-icons"></i>Breakfast</div>
        <div class="collapsible-body"><span></span> 
        <!-- Modal Trigger -->
        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">View Menu</a>
@@ -54,7 +80,7 @@
        
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Lunch</div>
+      <div class="collapsible-header"><i class="material-icons"></i>Lunch</div>
       <div class="collapsible-body"><span></span>
     <!-- Modal Trigger -->
     
@@ -72,7 +98,7 @@
     </div></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Dinner</div>
+      <div class="collapsible-header"><i class="material-icons"></i>Dinner</div>
       <div class="collapsible-body"><span></span>
       <!-- Modal Trigger -->
     
@@ -88,26 +114,57 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
     </div>
-
-
- 
-
-
-      </div>
-    </li>
     </ul>
 
 
 
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript"> 
-       $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-        });
-      $(".button-collapse").sideNav(); 
-      </script>
-      
-    </body>
-  </html>
-        
+
+
+
+
+    <div class="section">
+    </div>
+  </div>
+
+
+<!-footer->
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+  $(".button-collapse").sideNav(); 
+
+});
+</script>
